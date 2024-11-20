@@ -5,45 +5,30 @@
     <title>KALIZ</title>
     <meta charset="UTF-8" />
     <script src="https://kit.fontawesome.com/df1795601b.js" crossorigin="anonymous"></script>
- 
     <style>
-        /* Stijl voor de container van het pictogram en de tekst */
-        .icon-text {
-            position: absolute;   /* Vrij positioneren */
-            top: 10px;            /* Afstand vanaf de bovenkant */
-            right: 10px;          /* Afstand vanaf de rechterkant */
-            display: flex;        /* Gebruik flexbox om items naast elkaar te zetten */
-            align-items: center;  /* Verticaal centreren van tekst en pictogram */
-            gap: 8px;             /* Ruimte tussen pictogram en tekst */
-            font-size: 24px;      /* Basisgrootte */
-            color: #333;          /* Kleur van tekst en pictogram */
-        }
+    /* Container om inhoud te centreren */
+    body {
+        display: flex;           /* Gebruik Flexbox om inhoud te centreren */
+        justify-content: center; /* Horizontaal centreren */
+        align-items: center;     /* Verticaal centreren */
+        height: 100vh;           /* Vul de volledige hoogte van het scherm */
+        margin: 0;               /* Verwijder standaardmarges */
+        background-color: #f9f9f9; /* Optionele achtergrondkleur */
+    }
 
-        /* Hover-effect */
-        .icon-text:hover {
-            color: #007BFF;       /* Kleur verandert bij hover */
-        }
-    </style>
-    <style>
-        /* Basisstijl voor responsieve afbeelding */
+    /* Basisstijl voor responsieve afbeelding */
+    img {
+        max-width: 80%;          /* Past de afbeelding aan binnen 80% van de container */
+        height: auto;            /* Houdt de verhoudingen vast */
+    }
+
+    /* Media query voor kleinere schermen (smartphones) */
+    @media (max-width: 600px) {
         img {
-            max-width: 60%;  /* Zorgt ervoor dat de afbeelding maximaal de breedte van de container is */
-            height: auto;     /* Houdt de verhouding van de afbeelding vast */
+            max-width: 90%;      /* Maak de afbeelding breder op kleinere schermen */
         }
-
-        /* Centreer tekst en maak iconen responsief */
-        p {
-            text-align: center;
-            font-size: 1.5em; /* Grotere tekst op desktop */
-        }
-
-        /* Media query voor kleinere schermen (smartphones) */
-        @media (max-width: 600px) {
-            p {
-                font-size: 1.2em; /* Kleinere tekst op mobiele apparaten */
-            }
-        }
-    </style>
+    }
+</style>  
 </head>
 <body>
     <div align="center"><img src="Kaliz logo transparant.png" alt="logo">
