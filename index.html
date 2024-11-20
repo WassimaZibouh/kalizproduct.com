@@ -5,30 +5,38 @@
     <title>KALIZ</title>
     <meta charset="UTF-8" />
     <script src="https://kit.fontawesome.com/df1795601b.js" crossorigin="anonymous"></script>
-    <style>
-    /* Container om inhoud te centreren */
-    body {
-        display: flex;           /* Gebruik Flexbox om inhoud te centreren */
-        justify-content: center; /* Horizontaal centreren */
-        align-items: center;     /* Verticaal centreren */
-        height: 100vh;           /* Vul de volledige hoogte van het scherm */
-        margin: 0;               /* Verwijder standaardmarges */
-        background-color: #f9f9f9; /* Optionele achtergrondkleur */
-    }
-
-    /* Basisstijl voor responsieve afbeelding */
-    img {
-        max-width: 80%;          /* Past de afbeelding aan binnen 80% van de container */
-        height: auto;            /* Houdt de verhoudingen vast */
-    }
-
-    /* Media query voor kleinere schermen (smartphones) */
-    @media (max-width: 600px) {
-        img {
-            max-width: 90%;      /* Maak de afbeelding breder op kleinere schermen */
+     <style>
+        /* Container om afbeelding en tekst te centreren */
+        .center-container {
+            display: flex;           /* Gebruik Flexbox */
+            flex-direction: column; /* Stapel items verticaal */
+            align-items: center;    /* Centreer afbeelding en tekst horizontaal */
+            justify-content: center; /* Centreer container verticaal */
+            height: 100vh;          /* Vul het scherm volledig */
+            text-align: center;     /* Zorg dat tekst gecentreerd wordt */
+            margin: 0;              /* Verwijder standaard marges */
+            background-color: #f9f9f9; /* Optionele achtergrondkleur */
         }
-    }
-</style>  
+
+        /* Stijl voor de afbeelding */
+        img {
+            max-width: 50%;         /* Maximaal 50% van de breedte van de container */
+            height: auto;           /* Houdt de oorspronkelijke verhoudingen vast */
+        }
+
+        /* Stijl voor de tekst */
+        .caption {
+            font-size: 1.2em;       /* Grootte van de tekst */
+            color: #333;            /* Tekstkleur */
+            margin-top: 10px;       /* Ruimte boven de tekst */
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <img src="Kaliz logo transparant.png" alt="logo">
+        <p class="caption">Welkom bij Kaliz! Binnenkort beschikbaar.</p>
+    </div></style>  
 </head>
 <body>
     <div align="center"><img src="Kaliz logo transparant.png" alt="logo"><p>COMING SOON...</p>
